@@ -1,6 +1,6 @@
-## Projeto de Calculadora em HTML, CSS e JavaScript
+# Projeto de Calculadora em HTML, CSS e JavaScript
 
-### Descrição
+## Descrição
 
 Este é o meu primeiro projeto no GitHub, uma calculadora simples desenvolvida com HTML, CSS e JavaScript. A calculadora é uma aplicação web interativa que permite realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão.
 
