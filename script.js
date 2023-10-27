@@ -19,16 +19,17 @@ teclasNum.forEach((el)=>{
             if (!decimal) {
                 decimal=true
                 if (display.innerHTML=="0") {
-                    display.innerHTML="0,"
+                    display.innerHTML="0."
                 }else{
-                    display.innerHTML+=evt.target.innerHTML 
+                    display.innerHTML+="." 
                 }
             }
         }else{
             if (display.innerHTML=="0") {
                 display.innerHTML=""
             }
-            display.innerHTML+=evt.target.innerHTML 
+            display.innerHTML+=evt.target.innerHTML
+            decimal=false 
         }
     })
 })
@@ -37,13 +38,10 @@ teclasOp.forEach((el)=>{
     el.addEventListener("click",(evt)=>{
         if (!sinal) {
             sinal=true
-            if (display.innerHTML=="0") {
-                display.innerHTML=""
-            }
             if (evt.target.innerHTML=="x") {
                 display.innerHTML+="*"
             }else{
-                display.innerHTML+=evt.target.innerHTML 
+                display.innerHTML+=evt.target.innerHTML
             }
         }
     })
