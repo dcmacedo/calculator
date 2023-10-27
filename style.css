@@ -1,48 +1,102 @@
 *{
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
 }
 
-.fundo{
-    background-image: linear-gradient(45deg,black,crimson);
-    height: 100vh;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.calculadora{
+/* CORPO */
+.calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 15px;
-    padding: 15px;
+    top: 20px;
+    left: -230px;
+    transition: all 0.2s;
 }
 
-.botao{
+.calc_exibir{
+    left: 0px !important;
+    transition: all 0.2s;
+}
+
+.calc_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eee;
+    border: 3px solid #bbb;
+    width: 230px;
+    border-radius: 5px;
+}
+
+/* TITULO */
+.div_nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+}
+
+/* TECLAS */
+.div_teclas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    flex-wrap: wrap;
+    /* border: 1px solid #f00;*/
+}
+
+.tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaa;
+    border: 3px solid #888;
+    border-radius: 10px;
+    font-weight: bold;
     width: 50px;
     height: 50px;
-    font-size: 25px;
     cursor: pointer;
     margin: 2px;
-    background-color: rgb(31, 31, 31);
-    border: none;
-    color: white;
 }
 
-.botao:hover{
-    background-color: black;
+.teclaOp{
+    background-color: #f44 !important;
+    border-color: #800 !important;
 }
 
-#resultado{
-    background-color: white;
-    width: 203px;
-    height: 30px;
-    margin: 5px;
-    font-size: 25px;
-    color: black;
+/* DISPLAY */
+.div_display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #f00;*/
+    width: 220px;
+}
+
+.display{
+    width: 220px;
+    background-color: #8a8;
     text-align: right;
     padding: 5px;
+    font-family: monospace;
+    font-size: larger;
+}
+
+.calc_aba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 0px 8px 8px 0px;
+    /*border: 1px solid #888;*/
+    cursor: pointer;
 }
